@@ -13,3 +13,5 @@ printf "Push to remote...\n"
 git push
 git push --tags
 
+printf "\n\nDone!\n"
+
