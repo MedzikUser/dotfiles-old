@@ -1,0 +1,11 @@
+#!/usr/bin/bash
+
+## Pull remote changes
+git pull
+
+## Fast commit and push to remote
+git add .
+git commit -m "update"
+git push
+git push --tags
+
