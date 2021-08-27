@@ -1,11 +1,15 @@
 #!/usr/bin/bash
 
 ## Pull remote changes
+printf "Pull changes..."
 git pull
 
 ## Fast commit and push to remote
+printf "Commit changes..."
 git add .
 git commit -m "update"
+
+printf "Push to remote..."
 git push
 git push --tags
 
