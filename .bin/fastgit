@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 
 ## Pull remote changes
 printf "Pull changes...\n"
