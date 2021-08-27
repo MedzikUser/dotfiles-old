@@ -1,0 +1,21 @@
+#!/usr/bin/bash
+
+# Colors
+
+#COLOR='\033[KEYm'
+blue='\033[0;34m'
+nc='\033[0m' # No Color
+
+if [ "$EUID" -ne 0 ];then 
+        printf "${red}Please run as root${nc}!\n"
+        exit 1
+fi
+
+printf "${blue}Installing Node.js...${nc}\n"
+
+pacman -Sy nodejs yarn npm --noconfirm
+
+printf "${blue}Installing Golang...${nc}\n"
+
+pacman -S go --noconfirm
+

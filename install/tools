@@ -17,7 +17,6 @@ curl -sfL https://install.goreleaser.com/github.com/goreleaser/goreleaser.sh | s
 go clean
 rm -rf $GOPATH/src $GOPATH/pkg
 
-
 # Node.js
 yarn global add nodemon
 
