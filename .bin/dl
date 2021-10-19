@@ -1,0 +1,17 @@
+#!/bin/bash
+
+source ~/.config/bash_colors.sh
+
+while true
+do
+  printf "${BLUE}"
+  if youtube-dl $@
+  then
+    printf "${GREEN}Exit code $?, SUCCESS!\n${COLOR_NC}"
+    break
+  else
+    printf "${RED}Exit code $?, retrying...\n${COLOR_NC}"
+  fi
+
+  sleep 5
+done
