@@ -10,9 +10,9 @@ else
 fi
 
 printf "${BLUE}Pull changes from remote...\n${COLOR_NC}"
-git pull -r
+git pull
 
-printf "${BLUE}Commit changes...\n${COLOR_NC}"
+printf "${BLUE}Commit...\n${COLOR_NC}"
 git add .
 git commit -m "$COMMIT_MSG"
 
