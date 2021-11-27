@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ~/.config/bash_colors.sh
+source ~/.lib/bash_colors.sh
 
 while true
 do
