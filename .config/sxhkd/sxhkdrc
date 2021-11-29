@@ -22,7 +22,7 @@ super + Return
 
 # program launcher
 super + @space
-	j4-dmenu-desktop
+	dmenu-desktop --dmenu='dmenu -nb "#222222" -nf "#bbbbbb" -sb "#3b4252" -sf "#eeeeee"' --display-binary
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -136,4 +136,7 @@ super + {Left,Down,Up,Right}
 
 # screenshots
 Print
-	screenshot-imgur -c=/home/acer/.config/screenshot-imgur/config.toml -s >> screenshot.log
+	screenshot-imgur --config=/home/acer/.config/screenshot-imgur/config.toml --select >> screenshot.log
+
+super + Print
+	screenshot-imgur --config=/home/acer/.config/screenshot-imgur/config.toml --window >> screenshot.log
