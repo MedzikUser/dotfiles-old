@@ -1,3 +1,3 @@
 # 🖥️ My Configs and Programs
 
-## ⚡ OS: [Arch Linux](https://archlinux.org/)
+![ss](https://cdn.magicuser.cf/xioZ8un.png)
