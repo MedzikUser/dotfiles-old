@@ -14,7 +14,7 @@ git pull
 
 printf "${COLOR_BLUE}Commit...\n${COLOR_NC}"
 git add .
-git commit -m "$COMMIT_MSG"
+git commit ${GIT_COMMIT_OPTIONS} -m "$COMMIT_MSG"
 
 printf "${COLOR_BLUE}Push to remote...\n${COLOR_NC}"
 git push --follow-tags

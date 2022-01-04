@@ -5,7 +5,7 @@ BIN_DIR_NAME="$2"
 LIB_DIR_NAME="$3"
 BIN_DIR="$4"
 LIB_DIR="$5"
-GIT_OPTIONS="$6"
+GIT_COMMIT_OPTIONS="$6"
 
 setup() {
   rm -rf dist > /dev/zero
@@ -24,6 +24,8 @@ setup() {
 
   sed -i -e "s,\${BIN_DIR},$BIN_DIR,g" $BIN_DIR_NAME/*
   sed -i -e "s,\${LIB_DIR},$LIB_DIR,g" $BIN_DIR_NAME/*
+
+  sed -i -e "s,\${GIT_COMMIT_OPTIONS},$GIT_COMMIT_OPTIONS,g" $BIN_DIR_NAME/fastgit
 
   cd ..
 }
